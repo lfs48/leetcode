@@ -24,7 +24,9 @@ class ParkingSystem {
     }
     
     public boolean addCar(int carType) {
+        
         switch(carType) {
+
             case 1:
                 if (this.big < this.bigMax) {
                     this.big++;
@@ -33,7 +35,7 @@ class ParkingSystem {
                     return false;
                 }
                 
-                case 2:
+            case 2:
                 if (this.medium < this.mediumMax) {
                     this.medium++;
                     return true;
@@ -41,14 +43,16 @@ class ParkingSystem {
                     return false;
                 }
                 
-                case 3:
+            case 3:
                 if (this.small < this.smallMax) {
                     this.small++;
                     return true;
                 } else {
                     return false;
                 }
-        }
+            }
+
         return false;
+
     }
 }
